@@ -3,10 +3,10 @@
 **Wired USB-to-USB Compute Offloading & Co-Processing Engine**  
 *Seamlessly distribute heavy workloads between your Linux laptop and Android phone over a physical USB-C cable.*
 
-[![CI](https://github.com/vijaygovindBiju/PocketBridge/actions/workflows/ci.yml/badge.svg)](https://github.com/vijaygovindBiju/PocketBridge/actions/workflows/ci.yml)
+[![CI](https://github.com/JustPirate/PocketBridge/actions/workflows/ci.yml/badge.svg)](https://github.com/JustPirate/PocketBridge/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Release](https://img.shields.io/badge/Release-v1.4.0-blue.svg)](https://github.com/vijaygovindBiju/PocketBridge/releases)
-[![Plugin Hub](https://img.shields.io/badge/Plugins-pocketbridge--plugins-green.svg)](https://github.com/vijaygovindBiju/pocketbridge-plugins)
+[![Release](https://img.shields.io/badge/Release-v1.4.0-blue.svg)](https://github.com/JustPirate/PocketBridge/releases)
+[![Plugin Hub](https://img.shields.io/badge/Plugins-pocketbridge--plugins-green.svg)](https://github.com/JustPirate/pocketbridge-plugins)
 
 <p align="center">
   <img src="assets/demo.svg" alt="PocketBridge Hybrid Co-Processing Demo" width="850">
@@ -30,7 +30,7 @@ Modern flagship smartphones (like the **Snapdragon 8 Elite** with custom Oryon c
 - **Universal Process Proxy (`pocketbridge exec`):** Partition and stream *any* Unix command's data (line-by-line, byte chunking, or item lists) concurrently between laptop and phone.
 - **Fault-Tolerant Multi-Device Fleet (`pocketbridge fleet`):** Connect multiple Android devices; distribute work chunks with dynamic work-stealing and automatic failover on cable unplug.
 - **Hardware Safety & Thermal Gates:** Respects Android WakeLocks, battery charging state, and Qualcomm thermal throttling levels (`normal`, `light`, `moderate`, `severe`).
-- **Modular Plugin & AI Model Hub (`pocketbridge plugin`):** Heavy workloads (image batch processing, data analytics, Whisper speech-to-text, headless Chromium tabs, FFmpeg transcoding) are installed on-demand from the official [pocketbridge-plugins](https://github.com/vijaygovindBiju/pocketbridge-plugins) community registry without bloating the core binary.
+- **Modular Plugin & AI Model Hub (`pocketbridge plugin`):** Heavy workloads (image batch processing, data analytics, Whisper speech-to-text, headless Chromium tabs, FFmpeg transcoding) are installed on-demand from the official [pocketbridge-plugins](https://github.com/JustPirate/pocketbridge-plugins) community registry without bloating the core binary.
 
 ---
 
@@ -193,7 +193,7 @@ pocketbridge fleet -a chunk_transform --records 1000000 --chunks 16
 ```
 
 ### `pocketbridge plugin` — Modular Plugin & AI Model Hub (Phase 10)
-Manage on-demand workloads from the [pocketbridge-plugins](https://github.com/vijaygovindBiju/pocketbridge-plugins) registry:
+Manage on-demand workloads from the [pocketbridge-plugins](https://github.com/JustPirate/pocketbridge-plugins) registry:
 ```bash
 # List built-in engines, installed plugins, and available catalog
 pocketbridge plugin list
@@ -260,7 +260,7 @@ pocketbridge profile
 
 Community plugins are hosted in a separate public repository to protect core engine integrity:
 
-👉 **[pocketbridge-plugins Repository](https://github.com/vijaygovindBiju/pocketbridge-plugins)**
+👉 **[pocketbridge-plugins Repository](https://github.com/JustPirate/pocketbridge-plugins)**
 
 | Plugin | Version | Capability Status | Size | Type | Description |
 |--------|---------|:-----------------:|------|------|-------------|
@@ -323,4 +323,4 @@ Community plugin registry infrastructure is licensed under Apache-2.0.
 
 ---
 
-**Author:** [Vijaygovind Biju](https://github.com/vijaygovindBiju)
+**Author:** [Vijaygovind Biju](https://github.com/JustPirate)
